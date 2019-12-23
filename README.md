@@ -36,7 +36,7 @@ inside the directory and the site will be generated.
 ```
 
 
->Developer: [Sharad Raj](sharadcodes.github.io)
+>Developer: [Sharad Raj](https://sharadcodes.github.io)
 
 ## [DEMO](https://sudositedemo.netlify.com/)
 ## [DEMO SITE REPO](https://github.com/sharadcodes/sudo_site_demo)
