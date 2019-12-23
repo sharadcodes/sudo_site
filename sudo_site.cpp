@@ -53,7 +53,9 @@ void render_pages()
         std::string file_name = full_input_path.substr(6, full_input_path.length() - 9);
         std::string full_output_path = file_name + ".html";
 
-        cpp_ssg_config_data["content"] = parse_md(read_file(full_input_path));
+        std::string html_with_full_data = render(read_file(full_input_path), cpp_ssg_config_data);
+        html_with_full_data = parse_md(html_with_full_data);
+        cpp_ssg_config_data["content"] = html_with_full_data;
 
         std::string temp_layout = read_file("layouts/" + layout);
 
