@@ -25,4 +25,5 @@ jobs:
        git add .
        git commit -am "Site updated"
        git push -f -q https://${{ secrets.MYTOKEN }}@github.com/sharadcodes/sudo_site_demo.git master
+       echo Finished
       
