@@ -13,15 +13,16 @@ jobs:
       run: g++ -o sudo_site sudo_site.cpp -lstdc++fs
     - name: build
       run: ./sudo_site
-#    - name: Push changes to site master repo
-#      run: |
-#        ls
-#        git clone https://${{ secrets.MYTOKEN }}@github.com/sharadcodes/cpp_ssg_demo_site.git
-#        cp -a site/. cpp_ssg_demo_site
-#        cd cpp_ssg_demo_site
-#        ls
-#        git config user.email "${{ github.actor }}@users.noreply.github.com"
-#        git config user.name "${{ github.actor }}"        
-#        git add .
-#        git commit -am "Site updated"
-#        git push -f -q https://${{ secrets.MYTOKEN }}@github.com/sharadcodes/cpp_ssg_demo_site.git master
+    - name: Push changes to the cpp_ssg_demo repository
+      run: |
+       ls
+       git clone https://${{ secrets.MYTOKEN }}@github.com/sharadcodes/cpp_ssg_demo.git
+       cp -a site/. cpp_ssg_demo
+       cd cpp_ssg_demo
+       ls
+       git config user.email "${{ github.actor }}@users.noreply.github.com"
+       git config user.name "${{ github.actor }}"        
+       git add .
+       git commit -am "Site updated"
+       git push -f -q https://${{ secrets.MYTOKEN }}@github.com/sharadcodes/cpp_ssg_demo.git master
+      
