@@ -8,11 +8,15 @@
     ],
     "nav_bar_items": [
         {
-            "title": "Home",
+            "title": "HOME",
             "url": "/index.html"
         },
         {
-            "title": "Contact",
+            "title": "NEWS",
+            "url": "/news.html"
+        },        
+        {
+            "title": "CONTACT",
             "url": "/contact.html"
         }
     ]
