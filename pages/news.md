@@ -1,5 +1,10 @@
-# NEWS PAGE
+# NEWS
 
 {% for i in collection_items_list.news %}
-<a href="{{i.url}}">{{i.title}}</a>
+<article>
+<h2>{{i.title}}</h2>
+<div>
+<a class="more" href="{{i.url}}">Read More</a>
+</div>
+</article>
 {% endfor %}

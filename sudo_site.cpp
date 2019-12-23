@@ -110,5 +110,15 @@ int main()
     std::experimental::filesystem::create_directory("site");
     render_collections();
     render_pages();
-    // std::cout << cpp_ssg_config_data.dump(4);
+    // copy static contents to site directory
+    try
+    {
+        std::experimental::filesystem::remove_all("./site/static");
+        std::experimental::filesystem::create_directory("./site/static");
+        std::experimental::filesystem::copy("./static/", "./site/static", std::experimental::filesystem::copy_options::recursive);
+    }
+    catch (std::exception ex)
+    {
+        std::cout << "error in copying";
+    }
 }

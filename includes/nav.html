@@ -1,9 +1,14 @@
 <nav>
-  {% for i in nav_bar_items %}
-  <br />
-  <a href="{{ i.url }}">
-    {{i.title}}
-  </a>
-  <br />
-  {% endfor %}
+  <section>
+    <span class="home">
+      <a href="/">{{site.title}}</a>
+    </span>
+    <span class="links">
+      {% for i in nav_bar_items %}
+      <a href="{{ i.url }}">
+        {{i.title}}
+      </a>
+      {% endfor %}
+    </span>
+  </section>
 </nav>
