@@ -5,7 +5,7 @@
 ```
  g++ -o sudo_site sudo_site.cpp -lstdc++fs  && ./sudo_site
 ```
-# A Static Site Generator in C++ which I made in in just 2 days.
+# A Static Site Generator in C++ which I made in just 2 days.
 
 >Developer: [Sharad Raj](sharadcodes.github.io)
 
