@@ -9,19 +9,11 @@
     "nav_bar_items": [
         {
             "title": "Home",
-            "url": "index.html"
+            "url": "/index.html"
         },
         {
             "title": "Contact",
-            "url": "contact.html"
-        },
-        {
-            "title": "Blog",
-            "url": "blog/"
-        },
-        {
-            "title": "News",
-            "url": "news/"
+            "url": "/contact.html"
         }
     ]
 }
