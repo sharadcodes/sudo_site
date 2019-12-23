@@ -97,7 +97,8 @@ void render_collections()
             save_html_file(temp_full_file, "site/" + full_output_path.substr(12, temp_full_file.length()));
 
             // making a list for storing links for items inside each collection
-            cpp_ssg_config_data["collection_items_list"][collections[index].get<std::string>()][i] = {{"title", file_name}, {"url", full_output_path}};
+            int len = full_output_path.length();
+            cpp_ssg_config_data["collection_items_list"][collections[index].get<std::string>()][i] = {{"title", file_name}, {"url", full_output_path.substr(12, len)}};
             cpp_ssg_config_data["content"] = "";
         }
     }
@@ -109,4 +110,5 @@ int main()
     std::experimental::filesystem::create_directory("site");
     render_collections();
     render_pages();
+    // std::cout << cpp_ssg_config_data.dump(4);
 }
