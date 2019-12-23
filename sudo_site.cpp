@@ -98,7 +98,7 @@ void render_collections()
 
             // making a list for storing links for items inside each collection
             int len = full_output_path.length();
-            cpp_ssg_config_data["collection_items_list"][collections[index].get<std::string>()][i] = {{"title", file_name}, {"url", full_output_path.substr(12, len)}};
+            cpp_ssg_config_data["collection_items_list"][collections[index].get<std::string>()][i] = {{"title", file_name}, {"url", "/" + full_output_path.substr(12, len)}};
             cpp_ssg_config_data["content"] = "";
         }
     }
