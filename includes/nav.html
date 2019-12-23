@@ -1,0 +1,9 @@
+<nav>
+  {% for i in nav_bar_items %}
+  <br />
+  <a href="{{ i.url }}">
+    {{i.title}}
+  </a>
+  <br />
+  {% endfor %}
+</nav>
