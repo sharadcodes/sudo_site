@@ -31,11 +31,6 @@ and the site will be generated.
 You don't need to compile it again. Next time just run `./sudo_site`
 inside the directory and the site will be generated.
 
-```
- g++ -o sudo_site sudo_site.cpp -lstdc++fs  && ./sudo_site
-```
-
-
 >Developer: [Sharad Raj](https://sharadcodes.github.io)
 
 ## [DEMO](https://sudositedemo.netlify.com/)
